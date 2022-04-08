@@ -35,15 +35,14 @@ for (i in input) {
   direction <- unlist(strsplit(i, " "))[1]
   amount <- as.integer(unlist(strsplit(i, " "))[2])
 
-    if (direction == "up") {
+  if (direction == "up") {
     aim <- aim - amount
   } else if (direction == "down") {
     aim <- aim + amount
   } else {
-      horizontal <- horizontal + amount
-      vertical <- vertical + aim * amount
+    horizontal <- horizontal + amount
+    vertical <- vertical + aim * amount
   }
-
 }
 
 product <- horizontal * vertical
