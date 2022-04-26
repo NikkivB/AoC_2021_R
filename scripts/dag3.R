@@ -1,7 +1,5 @@
 oldw <- getOption("warn")
 options(warn = -1)
-
-
 # Day 3, Part 1
 
 input <- readLines("input/dag3.txt")
